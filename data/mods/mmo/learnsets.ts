@@ -16740,6 +16740,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			bulletpunch: ["8L0", "7L1", "6L1", "6S7", "5L1", "5S2", "4L1"],
 			captivate: ["4M"],
 			confide: ["7M", "6M"],
+			closecombat: ["8M"],
 			counter: ["3T"],
 			crosspoison: ["8M"],
 			curse: ["7V"],
