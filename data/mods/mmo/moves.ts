@@ -522,10 +522,11 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	thunderwave: {
 		inherit:true,
+		
 		onHit(target) {
 		if (target.types.includes('Electric')){
 		return false
-		}
-		}}
-		
+	}
+},
+},
 };
