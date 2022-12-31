@@ -259,6 +259,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	meditate: {
 		inherit: true,
 		isNonstandard: null,
+		
 	},
 	mefirst: {
 		inherit: true,
@@ -519,4 +520,12 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
+	thunderwave: {
+		inherit:true,
+		onHit(target) {
+		if (target.types.includes('Electric')){
+		return false
+		}
+		}}
+		
 };
