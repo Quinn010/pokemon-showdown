@@ -2,6 +2,7 @@ export const TypeChart: {[k: string]: ModdedTypeData | null} = {
 	electric: {
 		inherit: true,
 		damageTaken: {
+			par: 3,
 			Bug: 0,
 			Dark: 0,
 			Dragon: 0,
@@ -19,7 +20,6 @@ export const TypeChart: {[k: string]: ModdedTypeData | null} = {
 			Rock: 0,
 			Steel: 2,
 			Water: 0,
-			par: 3,
 		},
 	},
 	ghost: {
@@ -47,6 +47,7 @@ export const TypeChart: {[k: string]: ModdedTypeData | null} = {
 	grass: {
 		inherit: true,
 		damageTaken: {
+			Powder: 3,
 			Bug: 1,
 			Dark: 0,
 			Dragon: 0,
@@ -64,7 +65,6 @@ export const TypeChart: {[k: string]: ModdedTypeData | null} = {
 			Rock: 0,
 			Steel: 0,
 			Water: 2,
-			Powder: 3,
 		},
 	},
 	steel: {
