@@ -47,7 +47,7 @@ export const TypeChart: {[k: string]: ModdedTypeData | null} = {
 	grass: {
 		inherit: true,
 		damageTaken: {
-			Powder: 3,
+			powder: 3,
 			Bug: 1,
 			Dark: 0,
 			Dragon: 0,
