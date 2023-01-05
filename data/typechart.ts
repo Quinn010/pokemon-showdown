@@ -92,7 +92,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Rock: 0,
 			Steel: 2,
 			Water: 0,
-			par: 3,
+			Par: 3,
 		},
 		HPivs: {spa: 30},
 		HPdvs: {atk: 14},
