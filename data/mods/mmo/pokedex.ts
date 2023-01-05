@@ -314,7 +314,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	},
 	milotic: {
 		inherit: true,
-		abilities: {0: "Marvel Scale", H: "Cute Charm"},
+		abilities: {0: "Marvel Scale", H: "Competitive"},
 	},
 	duskull: {
 		inherit: true,
