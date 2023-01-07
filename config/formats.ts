@@ -26,7 +26,7 @@ export const Formats: FormatList = [
 		section: "MMO Tiers",
 	},
 	{
-		name: "[Gen 8][MMO] OU",
+		name: "[MMO] OU",
 		desc: `MMO OU. I don't know what kind of fancy description you were expecting here`,
 		threads: [
 			`don't expect anything here`,
