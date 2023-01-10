@@ -21566,6 +21566,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			blizzard: ["7M", "7V", "6M", "5M", "4M", "3M"],
 			block: ["7T", "6T", "5T"],
 			bodyslam: ["3T"],
+			bodyslam: ["7M", "6M", "6S0", "5M", "4M", "3M"],
 			brickbreak: ["7M", "6M", "5M", "4M", "3M"],
 			bulldoze: ["7M", "6M", "5M"],
 			captivate: ["4M"],
