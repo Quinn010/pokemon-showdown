@@ -323,6 +323,88 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
+	recover: {
+		num: 105,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Recover",
+		pp: 5,
+		priority: 0,
+		flags: {snatch: 1, heal: 1},
+		heal: [1, 2],
+		secondary: null,
+		target: "self",
+		type: "Normal",
+		zMove: {effect: 'clearnegativeboost'},
+		contestType: "Clever",
+	},
+softboiled: {
+	num: 135,
+	accuracy: true,
+	basePower: 0,
+	category: "Status",
+	name: "Soft-Boiled",
+	pp: 5,
+	priority: 0,
+	flags: {snatch: 1, heal: 1},
+	heal: [1, 2],
+	secondary: null,
+	target: "self",
+	type: "Normal",
+	zMove: {effect: 'clearnegativeboost'},
+	contestType: "Cute",
+},
+rest: {
+	num: 156,
+	accuracy: true,
+	basePower: 0,
+	category: "Status",
+	name: "Rest",
+	pp: 5,
+	priority: 0,
+	flags: {snatch: 1, heal: 1},
+	onTry(source) {
+		if (source.status === 'slp' || source.hasAbility('comatose')) return false;
+
+		if (source.hp === source.maxhp) {
+			this.add('-fail', source, 'heal');
+			return null;
+		}
+		if (source.hasAbility(['insomnia', 'vitalspirit'])) {
+			this.add('-fail', source, '[from] ability: ' + source.getAbility().name, '[of] ' + source);
+			return null;
+		}
+	},
+	onHit(target, source, move) {
+		const result = target.setStatus('slp', source, move);
+		if (!result) return result;
+		target.statusState.time = 3;
+		target.statusState.startTime = 3;
+		this.heal(target.maxhp); // Aesthetic only as the healing happens after you fall asleep in-game
+	},
+	secondary: null,
+	target: "self",
+	type: "Psychic",
+	zMove: {effect: 'clearnegativeboost'},
+	contestType: "Cute",
+},
+slackoff: {
+	num: 303,
+	accuracy: true,
+	basePower: 0,
+	category: "Status",
+	name: "Slack Off",
+	pp: 5,
+	priority: 0,
+	flags: {snatch: 1, heal: 1},
+	heal: [1, 2],
+	secondary: null,
+	target: "self",
+	type: "Normal",
+	zMove: {effect: 'clearnegativeboost'},
+	contestType: "Cute",
+},
 	quash: {
 		inherit: true,
 		onHit(target) {
