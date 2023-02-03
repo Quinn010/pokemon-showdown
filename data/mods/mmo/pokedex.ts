@@ -520,7 +520,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	},
 	rufflet: {
 		inherit: true,
-		unreleasedHidden: true,
+		unreleasedHidden: false,
 	},
 	larvesta: {
 		inherit: true,
