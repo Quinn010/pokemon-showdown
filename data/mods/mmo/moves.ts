@@ -323,6 +323,10 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
+	seedflare: {
+		inherit: true,
+		isNonstandard: null,
+	},
 	quash: {
 		inherit: true,
 		onHit(target) {
