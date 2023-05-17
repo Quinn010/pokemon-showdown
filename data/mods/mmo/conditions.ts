@@ -7,8 +7,6 @@ export const Conditions: {[k: string]: ModdedConditionData} = {
 			return this.chainModify(1.5);
 		},
 	},
-};
-
 snow: {
 	name: 'Snow',
 	effectType: 'Weather',
@@ -42,3 +40,4 @@ snow: {
 		this.add('-weather', 'none');
 	},
 },
+};
