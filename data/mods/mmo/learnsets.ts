@@ -12950,6 +12950,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	},
 	voltorb: {
 		learnset: {
+			recycle: ["7T", "6T", "5T", "4M"],
 			bide: ["7V"],
 			charge: ["7L1", "6L1", "5L1", "5D", "4L1", "3L1"],
 			chargebeam: ["7M", "7L16", "6M", "6L16", "5M", "5L22", "4M", "4L26"],
@@ -24401,6 +24402,8 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	},
 	wooper: {
 		learnset: {
+			spikes: ["7L28", "7V", "6L28", "5L28", "4L23", "3L43", "3S1"],
+			stealthrock: ["8M", "8V", "7T", "6T", "5T", "4M"],
 			acidspray: ["8E", "7E", "6E", "5E"],
 			afteryou: ["8E", "7T", "7E", "6T", "6E", "5T", "5E"],
 			amnesia: ["8M", "8L32", "7L23", "7V", "6L23", "5L23", "4L23", "3L21"],
@@ -24584,6 +24587,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	},
 	murkrow: {
 		learnset: {
+			acrobatics: ["7M", "7L22", "6M", "6L22", "5M", "5L27"],
 			aerialace: ["7M", "6M", "5M", "4M", "3M"],
 			aircutter: ["4T"],
 			assurance: ["7L25", "7E", "6L25", "6E", "5L25", "5E", "4L25"],
