@@ -1,4 +1,4 @@
-export const Conditions: {[k: string]: ModdedConditionData} = {
+export const Conditions: {[k: string]: ConditionData} = {
 	gem: {
 		duration: 1,
 		affectsFainted: true,
