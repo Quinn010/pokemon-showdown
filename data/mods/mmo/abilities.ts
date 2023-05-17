@@ -48,14 +48,5 @@ slushrush: {
 	name: "Slush Rush",
 	rating: 3,
 	num: 202,
-
-},
-snowwarning: {
-	onStart(source) {
-		this.field.setWeather('snow');
-	},
-	name: "Snow Warning",
-	rating: 4,
-	num: 117,
 },
 }
